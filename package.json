@@ -1,0 +1,15 @@
+{
+  "name": "luhnar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "GPL",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
