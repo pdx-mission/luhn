@@ -16,7 +16,7 @@ module.exports = function luhnar(input) {
     const digit = ch.charCodeAt(0) - 48
     let weight;
     if (i % 2 == 0) {
-      weight = (2 * digit) - parseInt(digit / 5) * 9
+      weight = (2 * digit) - Math.floor(digit / 5) * 9
     } else {
       weight = digit
     }
