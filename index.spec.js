@@ -40,7 +40,6 @@ describe.each(testCases)('luhnar("%s") → %i', (input, expected) => {
   it("ignores whitespace", () => {
     const regular = luhnar(input)
     const noSpaces = luhnar(input.replace(/\s/g, ""))
-
     expect(regular).toBe(noSpaces)
   })
 
