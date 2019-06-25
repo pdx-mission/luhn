@@ -36,7 +36,7 @@ const testCases = [
   ["9 6A3 A GE", 9],
 ]
 
-describe.each(testCases)('luhnar "%s → %i"', (input, expected) => {
+describe.each(testCases)('luhnar("%s") → %i', (input, expected) => {
   it("ignores whitespace", () => {
     const regular = luhnar(input)
     const noSpaces = luhnar(input.replace(/\s/g, ""))
