@@ -1,10 +1,11 @@
 /**
  * Generates a check digit [0-9] based on string input
  * @param {string} input
+ * @param {boolean} [appendDigit] – Returns original string with check digit appended
  * @param {RegExp} [validCharacters]
  * @returns {number} a [0-9] integer
  */
-module.exports = function luhnar(input, validCharacters = /([0-9]|[A-Z])/) {
+exports.luhn = function luhn(input, appendDigit = false, validCharacters = /([0-9]|[A-Z])/) {
   // Remove spaces and make all letters uppercase
   const cleanInput = input.toUpperCase().replace(/\s/g, "")
 
@@ -40,5 +41,11 @@ module.exports = function luhnar(input, validCharacters = /([0-9]|[A-Z])/) {
 
   // Calculate check digit
   sum = Math.abs(sum) + 10
-  return (10 - (sum % 10)) % 10
+  const checkDigit = (10 - (sum % 10)) % 10
+
+  if (appendDigit) {
+    return `${input} ${checkDigit}`
+  }
+
+  return checkDigit
 }

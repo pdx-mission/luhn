@@ -1,4 +1,4 @@
-const luhnar = require(".")
+const { luhn } = require("./index")
 
 const testCases = [
   ["12", 5],
@@ -36,14 +36,14 @@ const testCases = [
   ["9 6A3 A GE", 9],
 ]
 
-describe.each(testCases)('luhnar("%s") → %i', (input, expected) => {
+describe.each(testCases)('luhn("%s") → %i', (input, expected) => {
   it("ignores whitespace", () => {
-    const regular = luhnar(input)
-    const noSpaces = luhnar(input.replace(/\s/g, ""))
+    const regular = luhn(input)
+    const noSpaces = luhn(input.replace(/\s/g, ""))
     expect(regular).toBe(noSpaces)
   })
 
   it("calculates expected digit", () => {
-    expect(luhnar(input)).toBe(expected)
+    expect(luhn(input)).toBe(expected)
   })
 })
