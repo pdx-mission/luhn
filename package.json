@@ -1,6 +1,6 @@
 {
   "name": "@prm/luhn",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pdx-mission/luhn.git"
@@ -16,7 +16,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "GPL",
+  "license": "GPL-3.0-or-later",
   "dependencies": {},
   "devDependencies": {
     "jest": "^24.8.0"
