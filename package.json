@@ -1,6 +1,14 @@
 {
   "name": "@prm/luhn",
   "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdx-mission/luhn.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pdx-mission/luhn/issues"
+  },
+  "homepage": "https://github.com/pdx-mission/luhn#readme",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,6 +17,7 @@
   "keywords": [],
   "author": "",
   "license": "GPL",
+  "dependencies": {},
   "devDependencies": {
     "jest": "^24.8.0"
   }
