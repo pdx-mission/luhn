@@ -20,6 +20,6 @@
   "license": "GPL-3.0-or-later",
   "dependencies": {},
   "devDependencies": {
-    "jest": "^24.8.0"
+    "jest": "^25.1.0"
   }
 }
